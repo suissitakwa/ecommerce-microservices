@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/product
-    username: takwasuissi
-    password: s20596025  # Remove the extra colon at the beginning of the password
+    username:  ${DB_USERNAME:tkwasuissi}
+    password:  ${DB_PASSWORD:s20596025}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
